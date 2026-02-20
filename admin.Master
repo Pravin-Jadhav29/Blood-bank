@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Codefile="admin.Master.cs" Inherits="PROJECT.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 134px;
+            width: 1244px;
+        }
+        .auto-style2 {
+            height: 41px;
+            width: 1254px;
+            margin-top: 0px;
+        }
+        .auto-style6 {
+            width: 241px;
+            box-shadow:initial;
+            }
+        .auto-style7 {
+            width: 233px;
+            }
+        .auto-style11 {
+            width: 372px;
+            }
+        .auto-style12 {
+            width: 269px;
+            }
+        .auto-style18 {
+            width: 1261px;
+            height: 49px;
+            margin-top: 0px;
+            
+        }
+        .auto-style19 {
+            width: 101%;
+            height: 72px;
+        }
+        .auto-style20 {
+            width: 198px;
+        }
+        .auto-style21 {
+            width: 1334px;
+        }
+        .auto-style22 {
+            width: 183px;
+        }
+        .auto-style23 {
+            width: 212px;
+        }
+        </style>
+</head>
+<body style="height: 728px; width: 1263px">
+    <form id="form1" runat="server">
+        <div class="auto-style1" style="border-style: inset">
+           
+            <table class="auto-style19">
+                <tr>
+                    <td class="auto-style20" rowspan="2">
+                        <asp:Image ID="Image1" runat="server" BackColor="#FF9999" Height="118px" ImageUrl="~/PICS/Screenshot 2024-01-04 200121.png" Width="200px" />
+                    </td>
+                    <td class="auto-style21" style="background-color: #99FFCC; background-image: url('/PICS/all page background image.png');">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Image ID="Image3" runat="server" Height="45px" ImageUrl="~/PICS/OIP (2).jpg" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" Font-Underline="True" ForeColor="Red" Text="AADHAR BLOOD BANK"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Image ID="Image4" runat="server" Height="45px" ImageUrl="~/PICS/OIP (2).jpg" />
+&nbsp;</td>
+                    <td rowspan="2">
+                        <asp:Image ID="Image2" runat="server" BackColor="Red" Height="127px" ImageUrl="~/PICS/donate.png" Width="200px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style21" style="background-color: #CCFFFF">
+                     <marquee><asp:Label ID="amsg" runat="server" Text="ADMIN PANEL______*Only for admin use*"></asp:Label></marquee>
+                    </td>
+                </tr>
+            </table>
+           
+        </div>
+        <div class="auto-style2">
+            <table class="auto-style18">
+                <tr>
+                    <td class="auto-style6" style="border-style: inset">
+                        
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Adminlogin1.aspx"> Admin Login</asp:HyperLink>
+                    </td>
+                    <td class="auto-style7" style="border-style: inset">
+                        
+                        <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Addadmin.aspx">Add Admin</asp:HyperLink>
+                        
+                    </td>
+                    <td class="auto-style12" style="border-style: inset">
+                        
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/searchdoner2.aspx">Search Donar</asp:HyperLink>
+                        
+                    </td>
+                    <td class="auto-style23" style="border-style: inset">
+                        
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/reqformad.aspx">Blood request</asp:HyperLink>
+                        
+                    </td>
+                    <td class="auto-style22" style="border-style: inset">
+                       
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/campadmin.aspx">Camp requested</asp:HyperLink>
+                       
+                    </td>
+                    <td class="auto-style11" style="border-style: inset">
+                        
+                        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/donerlist.aspx">All List&#39;s</asp:HyperLink>
+                        
+                    </td>
+                </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+   
+</body>
+</html>
